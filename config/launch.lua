@@ -11,7 +11,10 @@ if platform.is_win then
       { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
       { label = 'PowerShell Desktop', args = { 'powershell' } },
       { label = 'Command Prompt', args = { 'cmd' } },
-      { label = 'Git Bash', args = { 'git' } },
+      {
+         label = 'Git Bash',
+         args = { 'C:\\msys64\\usr\\bin\\bash.exe' },
+      },
    }
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish', '-l' }
