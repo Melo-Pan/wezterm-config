@@ -1,94 +1,94 @@
--- A slightly altered version of catppucchin mocha
+-- Monokai Pro theme
 -- stylua: ignore
-local mocha = {
-   rosewater = '#f5e0dc',
-   flamingo  = '#f2cdcd',
-   pink      = '#f5c2e7',
-   mauve     = '#cba6f7',
-   red       = '#f38ba8',
-   maroon    = '#eba0ac',
-   peach     = '#fab387',
-   yellow    = '#f9e2af',
-   green     = '#a6e3a1',
-   teal      = '#94e2d5',
-   sky       = '#89dceb',
-   sapphire  = '#74c7ec',
-   blue      = '#89b4fa',
-   lavender  = '#b4befe',
-   text      = '#cdd6f4',
-   subtext1  = '#bac2de',
-   subtext0  = '#a6adc8',
-   overlay2  = '#9399b2',
-   overlay1  = '#7f849c',
-   overlay0  = '#6c7086',
-   surface2  = '#585b70',
-   surface1  = '#45475a',
-   surface0  = '#313244',
-   base      = '#1f1f28',
-   mantle    = '#181825',
-   crust     = '#11111b',
+local monokai_pro = {
+   rosewater = '#f2d5cf',
+   flamingo  = '#f28c8e',
+   pink      = '#f5a5d1',
+   mauve     = '#d183e8',
+   red       = '#e46876',
+   maroon    = '#be4b67',
+   peach     = '#ff9e64',
+   yellow    = '#f6e189',
+   green     = '#82d182',
+   teal      = '#55d4be',
+   sky       = '#4cd9e2',
+   sapphire  = '#3b8dbd',
+   blue      = '#82aaff',
+   lavender  = '#b0b0ff',
+   text      = '#f8f8f2',
+   subtext1  = '#d8d8d8',
+   subtext0  = '#b0b0b0',
+   overlay2  = '#a0a0a0',
+   overlay1  = '#808080',
+   overlay0  = '#606060',
+   surface2  = '#505050',
+   surface1  = '#404040',
+   surface0  = '#303030',
+   base      = '#282828',
+   mantle    = '#212121',
+   crust     = '#121212',
 }
 
 local colorscheme = {
-   foreground = mocha.text,
-   background = mocha.base,
-   cursor_bg = mocha.rosewater,
-   cursor_border = mocha.rosewater,
-   cursor_fg = mocha.crust,
-   selection_bg = mocha.surface2,
-   selection_fg = mocha.text,
+   foreground = monokai_pro.text,
+   background = monokai_pro.base,
+   cursor_bg = monokai_pro.rosewater,
+   cursor_border = monokai_pro.rosewater,
+   cursor_fg = monokai_pro.crust,
+   selection_bg = monokai_pro.surface2,
+   selection_fg = monokai_pro.text,
    ansi = {
-      '#0C0C0C', -- black
-      '#C50F1F', -- red
-      '#13A10E', -- green
-      '#C19C00', -- yellow
-      '#0037DA', -- blue
-      '#881798', -- magenta/purple
-      '#3A96DD', -- cyan
-      '#CCCCCC', -- white
+      '#2e2e2e', -- black
+      '#e46876', -- red
+      '#82d182', -- green
+      '#f6e189', -- yellow
+      '#3b8dbd', -- blue
+      '#d183e8', -- magenta/purple
+      '#55d4be', -- cyan
+      '#f8f8f2', -- white
    },
    brights = {
-      '#767676', -- black
-      '#E74856', -- red
-      '#16C60C', -- green
-      '#F9F1A5', -- yellow
-      '#3B78FF', -- blue
-      '#B4009E', -- magenta/purple
-      '#61D6D6', -- cyan
-      '#F2F2F2', -- white
+      '#808080', -- black
+      '#f28c8e', -- red
+      '#82d182', -- green
+      '#ff9e64', -- yellow
+      '#82aaff', -- blue
+      '#b0b0ff', -- magenta/purple
+      '#4cd9e2', -- cyan
+      '#f8f8f2', -- white
    },
    tab_bar = {
       background = 'rgba(0, 0, 0, 0.4)',
       active_tab = {
-         bg_color = mocha.surface2,
-         fg_color = mocha.text,
+         bg_color = monokai_pro.surface2,
+         fg_color = monokai_pro.text,
       },
       inactive_tab = {
-         bg_color = mocha.surface0,
-         fg_color = mocha.subtext1,
+         bg_color = monokai_pro.surface0,
+         fg_color = monokai_pro.subtext1,
       },
       inactive_tab_hover = {
-         bg_color = mocha.surface0,
-         fg_color = mocha.text,
+         bg_color = monokai_pro.surface0,
+         fg_color = monokai_pro.text,
       },
       new_tab = {
-         bg_color = mocha.base,
-         fg_color = mocha.text,
+         bg_color = monokai_pro.base,
+         fg_color = monokai_pro.text,
       },
       new_tab_hover = {
-         bg_color = mocha.mantle,
-         fg_color = mocha.text,
+         bg_color = monokai_pro.mantle,
+         fg_color = monokai_pro.text,
          italic = true,
       },
    },
-   visual_bell = mocha.red,
+   visual_bell = monokai_pro.red,
    indexed = {
-      [16] = mocha.peach,
-      [17] = mocha.rosewater,
+      [16] = monokai_pro.peach,
+      [17] = monokai_pro.rosewater,
    },
-   scrollbar_thumb = mocha.surface2,
-   split = mocha.overlay0,
-   compose_cursor = mocha.flamingo,
+   scrollbar_thumb = monokai_pro.surface2,
+   split = monokai_pro.overlay0,
+   compose_cursor = monokai_pro.flamingo,
 }
 
 return colorscheme
